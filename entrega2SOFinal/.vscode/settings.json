@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "unistd.h": "c",
+        "operations.h": "c",
+        "*.tcc": "c",
+        "assert.h": "c",
+        "system_error": "c",
+        "fcntl.h": "c"
+    }
+}

@@ -1,0 +1,16 @@
+common.o: common/common.c  common/common.h
+
+tecnicofs_client_api.o: common/common.h client/tecnicofs_client_api.c \
+ client/tecnicofs_client_api.h
+operations.o: fs/operations.c fs/operations.h common/common.h fs/config.h \
+ fs/state.h
+state.o: fs/state.c fs/state.h fs/config.h
+tfs_server.o: fs/tfs_server.c common/common.h fs/operations.h fs/config.h \
+ fs/state.h
+client_server_simple_test.o: tests/client_server_simple_test.c \
+ client/tecnicofs_client_api.h common/common.h
+lib_destroy_after_all_closed_test.o: \
+ tests/lib_destroy_after_all_closed_test.c fs/operations.h \
+ common/common.h fs/config.h fs/state.h
+client_server_2.o: tests/client_server_2.c \
+ client/tecnicofs_client_api.h common/common.h
